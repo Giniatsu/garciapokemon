@@ -1,4 +1,5 @@
 import React from "react";
+import { PokemonRow } from "./ProductRow";
 
 export default function PokemonTable({ pokemons, filterText }) {
   const filteredPokemons = pokemons.filter(
@@ -25,12 +26,4 @@ export default function PokemonTable({ pokemons, filterText }) {
     </table>
   );
 }
-function PokemonRow({ pokemon }) {
-  return (
-    <tr>
-      <td>{pokemon.id}</td>
-      <td>{pokemon.name}</td>
-      <td>{pokemon.type.join(",")}</td>
-    </tr>
-  );
-}
+

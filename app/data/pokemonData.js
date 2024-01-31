@@ -9,4 +9,5 @@ export const POKEMONS = [
   { id: 7, name: "squirtle", type: ["water"] },
   { id: 8, name: "wartortle", type: ["water"] },
   { id: 9, name: "blastoise", type: ["water"] },
+  { id: 10, name: "pcy", type: ["bug", "earth"] },
 ];

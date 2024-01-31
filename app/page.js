@@ -2,14 +2,14 @@
 import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import PokemonTable from "./components/PokemonTable";
-import { POKEMONS } from "./data/pokemondata";
+import { POKEMONS } from "./data/pokemonData";
 
 function FilterablePokemonTable({ pokemons }) {
   const [filterText, setFilterText] = useState("");
 
   return (
     <div>
-      <h1 className="text-center text-2xl font-bold ">Pokemon</h1>
+      <h1 className="text-center text-2xl font-bold">Pokemon</h1>
       <SearchBar filterText={filterText} onFilterTextChange={setFilterText} />
       <PokemonTable pokemons={pokemons} filterText={filterText} />
     </div>
